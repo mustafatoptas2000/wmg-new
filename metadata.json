@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix WORLD MARINE GLOBAL",
+  "description": "Professional global maritime command, marina directory, marine weather intelligence, fleet management, and nautical navigation platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

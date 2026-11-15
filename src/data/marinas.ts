@@ -1,0 +1,70 @@
+import { Marina } from '../types/maritime';
+import { ALL_EUROPEAN_MARINAS } from './europeMarinas';
+import { ALL_TURKISH_MARINAS } from './turkeyMarinas';
+
+export const GLOBAL_OTHER_MARINAS: Marina[] = [
+  {
+    id: 'ae-dubai-harbour',
+    name: 'Dubai Harbour Marina',
+    country: 'United Arab Emirates',
+    countryCode: 'AE',
+    region: 'Middle East — Arabian Peninsula',
+    city: 'Dubai',
+    seaBasin: 'Persian Gulf',
+    latitude: 25.0919,
+    longitude: 55.1419,
+    coordinates: '25°05\'31"N 55°08\'31"E',
+    vhfChannel: 'Ch 11 / Ch 16',
+    maxLoaMeters: 160,
+    maxDraftMeters: 8.0,
+    berths: 700,
+    portOfEntry: true,
+    amenities: ['Immigration Desk', 'Fuel Quay', 'Helipad', 'ISPS Security', '24/7 Pilotage'],
+    summary: 'Large-scale Gulf maritime facility engineered for global superyachts, ocean passages, and Middle East winter cruising.',
+  },
+  {
+    id: 'sg-singapore-one15',
+    name: 'ONE°15 Marina Sentosa Cove',
+    country: 'Singapore',
+    countryCode: 'SG',
+    region: 'Asia — Southeast Asia',
+    city: 'Singapore',
+    seaBasin: 'Singapore Strait',
+    latitude: 1.2464,
+    longitude: 103.8439,
+    coordinates: '01°14\'47"N 103°50\'38"E',
+    vhfChannel: 'Ch 77 / Ch 16',
+    maxLoaMeters: 67,
+    maxDraftMeters: 4.5,
+    berths: 270,
+    portOfEntry: true,
+    amenities: ['MPA Port Clearance', 'Fuel Dock', 'Customs', 'Shore Power', 'Provisioning'],
+    summary: 'Equatorial hub on the Singapore Strait providing clearance and provisioning for Southeast Asian and Indian Ocean voyages.',
+  },
+  {
+    id: 'us-miami-beach',
+    name: 'Miami Beach Marina',
+    country: 'United States',
+    countryCode: 'US',
+    region: 'Americas — North America',
+    city: 'Miami',
+    seaBasin: 'North Atlantic Ocean',
+    latitude: 25.7717,
+    longitude: -80.1389,
+    coordinates: '25°46\'18"N 080°08\'20"W',
+    vhfChannel: 'Ch 16 / Ch 68',
+    maxLoaMeters: 76,
+    maxDraftMeters: 4.2,
+    berths: 400,
+    portOfEntry: true,
+    amenities: ['Government Cut Access', 'Fuel Pier', 'CBP Clearance', 'Hurricane Mooring', 'Dockmaster'],
+    summary: 'Atlantic gateway marina at the south end of Miami Beach providing direct access to the Gulf Stream and Bahamas passages.',
+  },
+];
+
+// Extensible World Marina Registry: append additional regional modules here.
+export const WORLD_MARINAS: Marina[] = [
+  ...ALL_TURKISH_MARINAS,
+  ...ALL_EUROPEAN_MARINAS,
+  ...GLOBAL_OTHER_MARINAS,
+];
